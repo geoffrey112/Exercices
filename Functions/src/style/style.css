@@ -1,4 +1,4 @@
-p{
+p, ol>li{
   font-size:23px;
 }
 
@@ -13,4 +13,3 @@ h1{
   border:2px solid black;
   width: fit-content;
 }
-
