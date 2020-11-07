@@ -8,7 +8,7 @@ document.getElementById("date").innerHTML = date();
 
 
 
-// Without parameters 2.
+// 2.
 function os(){
   let OS = "OS Inconnu"; 
   if (navigator.appVersion.indexOf("Win")!=-1) OS = "Your operating system is: Windows"; 
@@ -20,11 +20,18 @@ function os(){
 
 document.getElementById("device").innerHTML = os();
 
-
+////////////////////////////////////
 
 // With one parameter 1.
+function checkNb(param){
+  return param % 2 == false;
+}
+
+document.getElementById("checkNb").innerHTML = checkNb(0);
 
 
+
+// 2.
 
 
 
