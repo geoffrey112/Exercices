@@ -23,8 +23,8 @@ document.getElementById("device").innerHTML = os();
 ////////////////////////////////////
 
 // With one parameter 1.
-function checkNb(param){
-  return param % 2 == false;
+function checkNb(nb){
+  return nb % 2 == false;
 }
 
 document.getElementById("checkNb").innerHTML = checkNb(0);
@@ -32,6 +32,52 @@ document.getElementById("checkNb").innerHTML = checkNb(0);
 
 
 // 2.
+function pi(nb){
+  let pi = Math.PI;
+  let virgule = pi.toFixed(nb);
+  return virgule;
+
+  // return Math.PI.toFixed(nb); // Other answer
+}
+
+document.getElementById("pi").innerHTML = pi(2);
+
+
+
+// 3.
+function reverse(string){
+  let splitString = string.split(""); 
+  let reverseString = splitString.reverse(); // First answer
+  let joinString = reverseString.join(""); 
+  return joinString;
+
+  // string = string.split(""); 
+  // string = string.reverse(); // Second answer found
+  // string = string.join("");
+  // return string;
+
+
+  // return string.split("").reverse().join(""); //Other smaller answer seen on internet 
+
+  // But what is the best answer?
+}
+
+document.getElementById("reverse").innerHTML = reverse("Hello world!");
+
+
+
+// 4.
+function length(string){
+  return string.length;
+}
+
+document.getElementById("lenght").innerHTML = length("Hello world!");
+
+
+
+// 5.
+
+
 
 
 
