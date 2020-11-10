@@ -1,4 +1,5 @@
-// Without parameters 1.
+// Without parameters 
+// 1.
 function date(){
   let date = new Date();
   return date;
@@ -20,9 +21,12 @@ function os(){
 
 document.getElementById("device").innerHTML = os();
 
+
 ////////////////////////////////////
 
-// With one parameter 1.
+
+// With one parameter 
+// 1.
 function checkNb(nb){
   return nb % 2 == false;
 }
@@ -76,6 +80,38 @@ document.getElementById("lenght").innerHTML = length("Hello world!");
 
 
 // 5.
+function lengthArray(string){
+  return string.length;
+}
+
+document.getElementById("array").innerHTML = lengthArray(["M4 ", "G18 ", "AWP"]);
+
+
+
+// 6
+function returnArray(string){
+  return string.split(" ");
+}
+
+document.getElementById("returnArray").innerHTML = returnArray("Hello world!");
+
+
+
+// 7.
+function object(string){
+  return new String(string).split(" ");
+}
+
+document.getElementById("object").innerHTML = `${object("Hello world!")} (Type is: ${typeof object()})`;
+
+
+
+// With two parameters
+// 1.
+
+
+
+
 
 
 
