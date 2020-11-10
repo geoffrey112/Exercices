@@ -1,16 +1,16 @@
 // Without parameters 
 // 1.
-function date(){
+function myDate(){
   let date = new Date();
   return date;
 }
 
-document.getElementById("date").innerHTML = date();
+document.getElementById("date").innerHTML = myDate();
 
 
 
 // 2.
-function os(){
+function myOs(){
   let OS = "OS Inconnu"; 
   if (navigator.appVersion.indexOf("Win")!=-1) OS = "Your operating system is: Windows"; 
   if (navigator.appVersion.indexOf("Mac")!=-1) OS = "Your operating system is: MacOS"; 
@@ -19,7 +19,7 @@ function os(){
   return OS;
 }
 
-document.getElementById("device").innerHTML = os();
+document.getElementById("device").innerHTML = myOs();
 
 
 ////////////////////////////////////
@@ -27,16 +27,16 @@ document.getElementById("device").innerHTML = os();
 
 // With one parameter 
 // 1.
-function checkNb(nb){
+function checkNumber(nb){
   return nb % 2 == false;
 }
 
-document.getElementById("checkNb").innerHTML = checkNb(0);
+document.getElementById("checkNb").innerHTML = checkNumber(4);
 
 
 
 // 2.
-function pi(nb){
+function returnPI(nb){
   let pi = Math.PI;
   let virgule = pi.toFixed(nb);
   return virgule;
@@ -44,7 +44,7 @@ function pi(nb){
   // return Math.PI.toFixed(nb); // Other answer
 }
 
-document.getElementById("pi").innerHTML = pi(2);
+document.getElementById("pi").innerHTML = returnPI(2);
 
 
 
@@ -75,7 +75,7 @@ function length(string){
   return string.length;
 }
 
-document.getElementById("lenght").innerHTML = length("Hello world!");
+document.getElementById("lenght").innerHTML = length("Hello");
 
 
 
@@ -98,11 +98,11 @@ document.getElementById("returnArray").innerHTML = returnArray("Hello world!");
 
 
 // 7.
-function object(string){
+function returnObject(string){
   return new String(string).split(" ");
 }
 
-document.getElementById("object").innerHTML = `${object("Hello world!")} (Type is: ${typeof object()})`;
+document.getElementById("object").innerHTML = `${returnObject("Hello world!")} (Type is: ${typeof returnObject()})`;
 
 
 
