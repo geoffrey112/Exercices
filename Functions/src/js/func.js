@@ -136,5 +136,11 @@ document.getElementById("remove").innerHTML = removeSec("Hello world !", "world"
 
 
 // 3.
+function order(array, string){
+  return array.sort() + string;
+  // return array.sort().reverse() + string; //For descending
+}
+
+document.getElementById("order").innerHTML = `${order(["betrave ", "concombre ", "abricot "], "Ascending")}`;
 
 
