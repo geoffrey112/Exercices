@@ -105,21 +105,36 @@ function returnObject(string){
 document.getElementById("object").innerHTML = `${returnObject("Hello world!")} (Type is: ${typeof returnObject()})`;
 
 
+////////////////////////////////////// 
+
 
 // With two parameters
 // 1.
+function checkString(string1, string2){
+  return string1.includes(string2);
+}
+
+document.getElementById("checkString").innerHTML = checkString("Hello world!", "world");
 
 
 
+// 2. Little problem
+function removeSec(string1, string2){
+  return string1.replace(string2);
+}
+
+document.getElementById("remove").innerHTML = removeSec("Hello world !", "world");
+
+
+// Test without function and it works
+
+// let txt = "Hello world !";
+// let replace = txt.replace("world ", "");
+
+// console.log(replace);
 
 
 
-
-
-
-
-
-
-
+// 3.
 
 
