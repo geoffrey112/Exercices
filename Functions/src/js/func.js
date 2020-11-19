@@ -1,9 +1,16 @@
 // Without parameters 
 // 1.
 function myDate(){
-  let date = new Date();
-  return date;
+  const day = new Date().getDay();
+  const date = new Date().getDate();
+  const month = new Date().getMonth() + 1;
+  const years = new Date().getFullYear();
+  const hours = new Date().getHours();
+  const minutes = new Date().getMinutes();
+  let amPm = hours > 12 ? "pm" : "am";
+  return `${day} ${date} ${month} ${years}, ${hours}:${minutes} ${amPm}`;
 }
+
 
 document.getElementById("date").innerHTML = myDate();
 
