@@ -1,13 +1,39 @@
 // Without parameters 
 // 1.
 function myDate(){
-  const day = new Date().getDay();
+  let day = new Date().getDay();
+  
+  // Note: Sunday is 0, Monday is 1, etc..
+  switch(day){
+    case 0:
+      day = "Sunday";
+      break;
+    case 1:
+      day = "Monday";
+    break;
+    case 2:
+      day = "Tuesday";
+    break;
+    case 3:
+      day = "Wednesday";
+    break;
+    case 4:
+      day = "Thursday"
+    break;
+    case 5:
+      day = "Friday";
+    break;
+    default:
+      day = "Saturday";
+  }
+
   const date = new Date().getDate();
   const month = new Date().getMonth() + 1;
   const years = new Date().getFullYear();
   const hours = new Date().getHours();
   const minutes = new Date().getMinutes();
   let amPm = hours > 12 ? "pm" : "am";
+
   return `${day} ${date} ${month} ${years}, ${hours}:${minutes} ${amPm}`;
 }
 
