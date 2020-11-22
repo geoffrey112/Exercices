@@ -87,6 +87,7 @@ function myOs(){
   if (navigator.appVersion.indexOf("Mac")!=-1) OS = "Your operating system is: MacOS"; 
   if (navigator.appVersion.indexOf("X11")!=-1) OS = "Your operating system is: Unix"; 
   if (navigator.appVersion.indexOf("Linux")!=-1) OS = "Your operating system is: Linux";
+
   return OS;
 }
 
@@ -100,7 +101,7 @@ document.getElementById("device").innerHTML = myOs();
 // 1.
 function checkNumber(nb){
   return nb % 2 == false;
-}
+};
 
 document.getElementById("checkNb").innerHTML = checkNumber(4);
 
@@ -108,11 +109,7 @@ document.getElementById("checkNb").innerHTML = checkNumber(4);
 
 // 2.
 function returnPI(nb){
-  let pi = Math.PI;
-  let virgule = pi.toFixed(nb);
-  return virgule;
-
-  // return Math.PI.toFixed(nb); // Other answer
+  return Math.PI.toFixed(nb);
 }
 
 document.getElementById("pi").innerHTML = returnPI(2);
@@ -121,20 +118,7 @@ document.getElementById("pi").innerHTML = returnPI(2);
 
 // 3.
 function reverse(string){
-  let splitString = string.split(""); 
-  let reverseString = splitString.reverse(); // First answer
-  let joinString = reverseString.join(""); 
-  return joinString;
-
-  // string = string.split(""); 
-  // string = string.reverse(); // Second answer found
-  // string = string.join("");
-  // return string;
-
-
-  // return string.split("").reverse().join(""); //Other smaller answer seen on internet 
-
-  // But what is the best answer?
+  return string.split("").reverse().join("");
 }
 
 document.getElementById("reverse").innerHTML = reverse("Hello world!");
