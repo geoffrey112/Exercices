@@ -24,9 +24,9 @@
         <!-- Exercice 1 -->
         <li>
           <div class="input-group mt-2">
-            <input type="number" class="form-control" placeholder="Enter nb" aria-label="Check number" aria-describedby="checkNbButton">
+            <input type="number" class="form-control" placeholder="Enter nb" aria-label="Check number" aria-describedby="checkNumber">
             <div class="input-group-prepend mr-2">
-              <button class="btn btn-outline-secondary btn-sm ml-2" type="button" id="checkNbButton">Check number</button>
+              <button class="btn btn-outline-secondary btn-sm" type="button" id="checkNumber">Check</button>
             </div>
           </div>
         </li>
@@ -38,9 +38,9 @@
         <!-- Exercice 3 -->
         <li>
           <div class="input-group mt-2">
-            <input type="text" class="form-control" placeholder="Enter string" aria-label="Reverse string" aria-describedby="checkStringButton">
+            <input type="text" class="form-control" placeholder="Enter string" aria-label="Reverse string" aria-describedby="reverseString">
             <div class="input-group-prepend mr-2">
-              <button class="btn btn-outline-secondary btn-sm ml-2" type="button" id="checkStringButton">Reverse string</button>
+              <button class="btn btn-outline-secondary btn-sm" type="button" id="reverseString">Reverse</button>
             </div>
           </div>
           <p id="reverse"></p>
@@ -49,18 +49,37 @@
         <!-- Exercice 4 -->
         <li>
           <div class="input-group mt-2">
-            <input type="text" class="form-control" placeholder="Enter string" aria-label="Lenght of string" aria-describedby="checkLenghtButton">
+            <input type="text" class="form-control" placeholder="Enter string" aria-label="Lenght of string" aria-describedby="checkLenght">
             <div class="input-group-prepend mr-2">
-              <button class="btn btn-outline-secondary btn-sm ml-2" type="button" id="checkLenghtButton">Lenght of string</button>
+              <button class="btn btn-outline-secondary btn-sm" type="button" id="checkLenght">Lenght</button>
             </div>
           </div>
           <p id="lenght"></p>
         </li>
 
         <!-- Exercice 5 -->
-        <li><p id="array"></p></li>
+        <li>
+          <div class="input-group mt-2">
+            <input type="text" class="form-control" placeholder="Enter an array" aria-label="Lenght of array" aria-describedby="lenghtArray">
+            <div class="input-group-prepend mr-2">
+              <button class="btn btn-outline-secondary btn-sm" type="button" id="lenghtArray">Lenght of array</button>
+            </div>
+          </div>
+          <p id="array"></p>
+        </li>
         
-        <li><p id="returnArray"></p></li>
+        <!-- Exercice 6 -->
+        <li>
+          <div class="input-group mt-2">
+            <input type="text" class="form-control" placeholder="Enter string" aria-label="Array of string cut" aria-describedby="ArrayString">
+            <div class="input-group-prepend mr-2">
+              <button class="btn btn-outline-secondary btn-sm" type="button" id="ArrayString">Array of string</button>
+            </div>
+          </div>
+          <p id="returnArray"></p>
+        </li>
+
+        <!-- Exercice 7 -->
         <li><p id="object"></p></li>
       </ol>
     </div>
@@ -68,8 +87,31 @@
     <h1 class="mt-5 mb-3">Exercice with two parameters</h1>
     <div class="contenuHtml mb-5">
       <ol>
-        <li><p id="checkString"></p></li>
-        <li><p id="remove"></p></li>
+        <!-- Exercice 1 -->
+        <li>
+          <div class="input-group mt-2">
+            <input type="text" class="form-control" placeholder="Enter the string" aria-label="First string" aria-describedby="checkParam">
+            <input type="text" class="form-control" placeholder="Second string to check" aria-label="Last string" aria-describedby="checkParam">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary btn-sm mr-2" type="button" id="checkParam">Check</button>
+                </div>
+          </div>
+          <p id="checkString"></p>
+        </li>
+
+        <!-- Exercice 2 -->
+        <li>
+          <div class="input-group mt-2">
+            <input type="text" class="form-control" placeholder="Enter the string" aria-label="First string" aria-describedby="checkParam">
+            <input type="text" class="form-control" placeholder="Second string to remove" aria-label="Last string" aria-describedby="checkParam">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary btn-sm mr-2" type="button" id="checkParam">Remove</button>
+                </div>
+          </div>
+          <p id="remove"></p>
+        </li>
+
+        <!-- Exercice 3 -->
         <li><p id="order"></p></li>
       </ol>
     </div>

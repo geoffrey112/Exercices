@@ -173,27 +173,18 @@ document.getElementById("checkString").innerHTML = checkString("Hello world!", "
 
 
 
-// 2. Little problem
+// 2.
 function removeSec(string1, string2){
-  return string1.replace(string2);
+  return string1.replace(string2, "");
 }
 
 document.getElementById("remove").innerHTML = removeSec("Hello world !", "world");
-
-
-// Test without function and it works
-
-// let txt = "Hello world !";
-// let replace = txt.replace("world ", "");
-
-// console.log(replace);
 
 
 
 // 3.
 function order(array, string){
   return array.sort() + string;
-  // return array.sort().reverse() + string; //For descending
 }
 
 document.getElementById("order").innerHTML = `${order(["betrave ", "concombre ", "abricot "], "Ascending")}`;
