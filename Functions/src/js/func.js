@@ -71,7 +71,7 @@ function myDate(){
   const years = new Date().getFullYear();
   const hours = new Date().getHours();
   const minutes = new Date().getMinutes();
-  let amPm = hours > 12 ? "pm" : "am";
+  const amPm = hours > 12 ? "pm" : "am";
 
   return `${day} ${date} ${month} ${years}, ${hours}:${minutes} ${amPm}`;
 }
@@ -101,11 +101,9 @@ document.getElementById("device").innerHTML = myOs();
 // 1.
 function checkNumber(nb){
   return nb % 2 == false;
-};
+}
 
-document.getElementById("checkNb").innerHTML = checkNumber(4);
-
-
+document.getElementById("checkNb").innerHTML = checkNumber(3);
 
 // 2.
 function returnPI(nb){
@@ -190,3 +188,18 @@ function order(array, string){
 document.getElementById("order").innerHTML = `${order(["betrave ", "concombre ", "abricot "], "Ascending")}`;
 
 
+
+
+
+// let button = document.getElementById("buttonTest");
+// button.addEventListener('click', function(){
+//   let input = document.getElementById("inputTest").value;
+//   console.log(input);
+// });
+
+let button = document.getElementById("buttonTest");
+button.addEventListener('click', function(){
+  let input = document.getElementById("inputTest").value;
+  alert(input);
+  document.getElementById("p").innerHTML = input;
+});
