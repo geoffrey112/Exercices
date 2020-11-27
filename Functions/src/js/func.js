@@ -69,9 +69,11 @@ function myDate(){
   }
 
   const years = new Date().getFullYear();
-  const hours = new Date().getHours();
+  let hours = new Date().getHours();
+  let amPm = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12;
+  hours = hours ? hours : 12;
   const minutes = new Date().getMinutes();
-  const amPm = hours > 12 ? "pm" : "am";
 
   return `${day} ${date} ${month} ${years}, ${hours}:${minutes} ${amPm}`;
 }
@@ -99,11 +101,23 @@ document.getElementById("device").innerHTML = myOs();
 
 // With one parameter 
 // 1.
-function checkNumber(nb){
-  return nb % 2 == false;
-}
 
-document.getElementById("checkNb").innerHTML = checkNumber(3);
+let button1 = document.getElementById("checkNumber");
+let input1 = document.getElementById("checkNumberInput");
+let invalidChars = ["e", "E", "+", ",", "."];
+
+input1.addEventListener('keydown', function(chars){
+  if (invalidChars.includes(chars.key)) {
+    chars.preventDefault();
+  }
+});
+
+button1.addEventListener('click', function(nb){
+  nb = document.getElementById("checkNumberInput").value;
+  let answer = document.getElementById("checkNb").innerHTML = nb % 2 == false;
+});
+
+
 
 // 2.
 function returnPI(nb){
@@ -197,9 +211,9 @@ document.getElementById("order").innerHTML = `${order(["betrave ", "concombre ",
 //   console.log(input);
 // });
 
-let button = document.getElementById("buttonTest");
-button.addEventListener('click', function(){
-  let input = document.getElementById("inputTest").value;
-  alert(input);
-  document.getElementById("p").innerHTML = input;
-});
+// let button = document.getElementById("buttonTest");
+// button.addEventListener('click', function(){
+//   let input = document.getElementById("inputTest").value;
+//   alert(input);
+//   document.getElementById("p").innerHTML = input;
+// });

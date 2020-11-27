@@ -18,8 +18,18 @@ h1{
   box-shadow: none;
 }
 
-.answer{
+/* .answer{
   border-radius: 0%;
+} */
+
+.answerContent{
+  border:1px solid #0b64d8ad;
+  width:70px;
+  height:35px;
+}
+
+.input1{
+  width:170px;
 }
 
 .exe1, .exe4, .exe5, .exe2_1{
