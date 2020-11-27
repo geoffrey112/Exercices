@@ -129,11 +129,11 @@ document.getElementById("pi").innerHTML = returnPI(2);
 
 
 // 3.
-function reverse(string){
-  return string.split("").reverse().join("");
-}
-
-document.getElementById("reverse").innerHTML = reverse("Hello world!");
+let button3 = document.getElementById("reverseButton");
+button3.addEventListener('click', function(input){
+  input = document.getElementById("inputReverse").value;
+  let answer = document.getElementById("reverse").innerHTML = input.split("").reverse().join("");
+});
 
 
 

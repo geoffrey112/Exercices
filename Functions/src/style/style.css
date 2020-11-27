@@ -18,13 +18,15 @@ h1{
   box-shadow: none;
 }
 
-/* .answer{
-  border-radius: 0%;
-} */
+.answerLittleContent{
+  border:1px solid #0b64d8ad;
+  width:70px;
+  height:35px;
+}
 
 .answerContent{
   border:1px solid #0b64d8ad;
-  width:70px;
+  width:289px;
   height:35px;
 }
 
