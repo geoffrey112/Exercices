@@ -138,20 +138,22 @@ button3.addEventListener('click', function(input){
 
 
 // 4.
-function length(string){
-  return string.length;
-}
-
-document.getElementById("lenght").innerHTML = length("Hello");
+let button4 = document.getElementById("checkLength");
+button4.addEventListener('click', function(string){
+  let input = document.getElementById("inputLength").value;
+  let answer = document.getElementById("length").innerHTML = input.length;
+});
 
 
 
 // 5.
-function lengthArray(string){
-  return string.length;
-}
 
-document.getElementById("array").innerHTML = lengthArray(["M4 ", "G18 ", "AWP"]);
+
+// function lengthArray(string){
+//   return string.length;
+// }
+
+// document.getElementById("array").innerHTML = lengthArray(["M4 ", "G18 ", "AWP"]);
 
 
 
