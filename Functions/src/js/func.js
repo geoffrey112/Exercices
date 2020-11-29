@@ -140,20 +140,19 @@ button3.addEventListener('click', function(input){
 // 4.
 let button4 = document.getElementById("checkLength");
 button4.addEventListener('click', function(string){
-  let input = document.getElementById("inputLength").value;
-  let answer = document.getElementById("length").innerHTML = input.length;
+  string = document.getElementById("inputLength").value;
+  let answer = document.getElementById("length").innerHTML = string.length;
 });
 
 
 
 // 5.
-
-
-// function lengthArray(string){
-//   return string.length;
-// }
-
-// document.getElementById("array").innerHTML = lengthArray(["M4 ", "G18 ", "AWP"]);
+let button5 = document.getElementById("lengthArray");
+button5.addEventListener('click', function(array){
+  array = document.getElementById("inputArray").value.split(/[,]/g);
+  let answer = document.getElementById("array").innerHTML = array.length;
+  console.log(array);
+});
 
 
 
