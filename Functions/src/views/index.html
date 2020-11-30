@@ -79,15 +79,14 @@
         <!-- Exercice 6 -->
         <li>
           <div class="input-group mt-2">
-            <input type="text" class="form-control pr-5" placeholder="Enter string" aria-label="Array of string cut" aria-describedby="ArrayString">
+            <input type="text" id="inputString" class="form-control padd" placeholder="Enter string" maxlength="26" aria-label="Array of string cut" aria-describedby="ArrayString">
             <div class="input-group-prepend mr-2">
               <button class="btn btn-outline-primary btn-sm" type="button" id="ArrayString">Array of string</button>
             </div>
           </div>
-          <div class="input-group exe6">
-            <input type="text" class="form-control answer" id="answer6">
+          <div class="answerContent mb-5">
+            <p id="arrayString"></p>
           </div>
-          <p id="returnArray"></p>
         </li>
 
         <!-- Exercice 7 -->
@@ -101,7 +100,6 @@
         <!-- Exercice 1 -->
         <li>
           <div class="input-group mt-2">
-            <!-- aria-label exe 1 et 2 -->
             <input type="text" class="form-control" placeholder="Enter the string" aria-label="First string" aria-describedby="checkParam">
             <input type="text" class="form-control" placeholder="Second string to check" aria-label="Last string" aria-describedby="checkParam">
                 <div class="input-group-prepend">

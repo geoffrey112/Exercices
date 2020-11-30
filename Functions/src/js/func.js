@@ -157,11 +157,11 @@ button5.addEventListener('click', function(array){
 
 
 // 6
-function returnArray(string){
-  return string.split(" ");
-}
-
-document.getElementById("returnArray").innerHTML = returnArray("Hello world!");
+let button6 = document.getElementById("ArrayString");
+button6.addEventListener('click', function(string){
+  string = document.getElementById("inputString").value;
+  let answer = document.getElementById("arrayString").innerHTML = string.split(" ");
+});
 
 
 

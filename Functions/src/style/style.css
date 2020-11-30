@@ -34,18 +34,14 @@ h1{
   width:170px;
 }
 
+.padd{
+  padding-right:94px;
+}
 
-/* A effacer à la fin de one params sauf 2_1*/
-.exe1, .exe4, .exe5, .exe2_1{
+
+/* A effacer à la fin*/
+.exe2_1{
   width:70px;
-}
-
-.exe3{
-  width: 289px;
-}
-
-.exe6{
-  width:249px;
 }
 
 .exe2_2{
