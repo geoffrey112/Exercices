@@ -161,6 +161,7 @@ let button6 = document.getElementById("ArrayString");
 button6.addEventListener('click', function(string){
   string = document.getElementById("inputString").value;
   let answer = document.getElementById("arrayString").innerHTML = string.split(" ");
+  console.log(string.split(" "));
 });
 
 
@@ -178,11 +179,12 @@ document.getElementById("object").innerHTML = `${returnObject("Hello world!")} (
 
 // With two parameters
 // 1.
-function checkString(string1, string2){
-  return string1.includes(string2);
-}
-
-document.getElementById("checkString").innerHTML = checkString("Hello world!", "world");
+let buttonTwo1 = document.getElementById("checkParam");
+buttonTwo1.addEventListener('click', function(string1, string2){
+  string1 = document.getElementById("inputFirstParam").value;
+  string2 = document.getElementById("inputSecondParam").value;
+  let answer = document.getElementById("checkString").innerHTML = string1.includes(string2);
+});
 
 
 
