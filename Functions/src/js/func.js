@@ -181,7 +181,7 @@ document.getElementById("object").innerHTML = `${returnObject("Hello world!")} (
 // 1.
 let buttonTwo1 = document.getElementById("checkParam");
 buttonTwo1.addEventListener('click', function(string1, string2){
-  string1 = document.getElementById("inputFirstParam").value;
+  string1 = document.getElementById("inputParamCheck").value;
   string2 = document.getElementById("inputSecondParam").value;
   let answer = document.getElementById("checkString").innerHTML = string1.includes(string2);
 });
@@ -189,11 +189,12 @@ buttonTwo1.addEventListener('click', function(string1, string2){
 
 
 // 2.
-function removeSec(string1, string2){
-  return string1.replace(string2, "");
-}
-
-document.getElementById("remove").innerHTML = removeSec("Hello world !", "world");
+let buttonTwo2 = document.getElementById("removeString");
+buttonTwo2.addEventListener('click', function(string1, string2){
+  string1 = document.getElementById("inputParamRemove").value;
+  string2 = document.getElementById("inputSecondRemove").value;
+  let answer = document.getElementById("remove").innerHTML = string1.replace(string2, "");
+});
 
 
 
@@ -205,18 +206,3 @@ function order(array, string){
 document.getElementById("order").innerHTML = `${order(["betrave ", "concombre ", "abricot "], "Ascending")}`;
 
 
-
-
-
-// let button = document.getElementById("buttonTest");
-// button.addEventListener('click', function(){
-//   let input = document.getElementById("inputTest").value;
-//   console.log(input);
-// });
-
-// let button = document.getElementById("buttonTest");
-// button.addEventListener('click', function(){
-//   let input = document.getElementById("inputTest").value;
-//   alert(input);
-//   document.getElementById("p").innerHTML = input;
-// });

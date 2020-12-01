@@ -30,6 +30,11 @@ h1{
   height:35px;
 }
 
+.answerBigContent{
+  border:1px solid #0b64d8ad;
+  height:35px;
+}
+
 .input1{
   width:170px;
 }
