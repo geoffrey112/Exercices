@@ -14,7 +14,7 @@ Methods ! here we gonna study how to build functions with or without parameters.
     - func() == 'MAC OS X'
 
 #### With one parameter
-1. Create a function which take a number as parameters and return and return 'true' if it is a pair number and 'false' when it is odd 
+1. Create a function which take a number as parameters and return 'true' if it is a pair number and 'false' when it is odd 
 
     example:
     - func(5) == false; func(6) == true

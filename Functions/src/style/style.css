@@ -1,0 +1,44 @@
+p, ol>li{
+  font-size:23px;
+}
+
+h1{
+  background-color:#ffe600;
+  width: fit-content;
+  font-size:30px;
+  text-decoration: underline;
+}
+
+.contentHtml{
+  border:2px solid black;
+  width: fit-content;
+}
+
+.answer:focus{
+  box-shadow: none;
+}
+
+.answerLittleContent{
+  border:1px solid #0b64d8ad;
+  width:70px;
+  height:35px;
+}
+
+.answerContent{
+  border:1px solid #0b64d8ad;
+  width:289px;
+  height:35px;
+}
+
+.answerBigContent{
+  border:1px solid #0b64d8ad;
+  height:35px;
+}
+
+.input1{
+  width:170px;
+}
+
+.padd{
+  padding-right:94px;
+}
